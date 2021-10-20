@@ -1,0 +1,16 @@
+.nav-bar {
+    list-style: none;
+    display: inline-block;
+}
+
+.nav-bar-item {
+    display: inline;
+    margin: 8px;
+    padding: 2px 8px 3px 8px;
+    border-radius: 5px;
+    border: 1px solid #dedede80;
+}
+
+.nav-bar-item:hover {
+    cursor: pointer;
+}

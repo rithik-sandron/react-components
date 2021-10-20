@@ -1,0 +1,64 @@
+.container {
+  background: #dedede30;
+  transition: all 0.1s linear;
+  overflow: hidden;
+}
+
+.grid-container {
+  display: grid;
+  padding: 24px;
+  animation: slow-flow 250s infinite linear;
+}
+
+.grid-container:hover {
+  animation-play-state: paused;
+}
+
+.grid-item {
+  justify-self: center;
+  background-color: #4d4d4d60;
+  margin: 8px;
+  height: 350px;
+  width: 270px;
+  border-radius: 16px;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  transition: width 0.2s ease-in-out;
+}
+
+.grid-item:hover {
+  /* opacity: 0.5;
+  transition: opacity 0.1s ease-in-out; */
+  transition: width 0.2s ease-in-out;
+  width: 500px;
+}
+
+.grid-item-banner {
+  background-color: rgba(236, 39, 39, 0.829);
+  padding: 8px;
+  height: 70%;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+}
+
+.grid-item-content {
+  font-size: 18.5px;
+  padding: 8px;
+  border-radius: 14px;
+}
+
+.grid-item-tags {
+  font-size: 14px;
+  padding: 0 8px;
+  border-radius: 14px;
+}
+
+@keyframes slow-flow {
+  from {
+    transform: translateX(0%);
+  }
+
+  to {
+    transform: translateX(calc(-1 * 300px * var(--animate-duration)));
+  }
+}

@@ -1,0 +1,30 @@
+.p-flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+}
+
+.p-grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  background-color: #dedede30;
+  padding: 24px 0;
+  width: inherit;
+}
+
+.p-flex-item {
+  justify-self: center;
+  border-radius: 14px;
+  background-color: #4d4d4d60;
+  margin: 8px;
+  height: 350px;
+  width: 300px;
+}
+
+.p-flex-item:nth-child(2n) {
+  height: 250px;
+}
+
+.p-flex-item:nth-child(3n) {
+  height: 550px;
+}
