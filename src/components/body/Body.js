@@ -47,10 +47,10 @@ export default function Body(props) {
         setElement(<PGrid />);
         break;
       case "react-component-lifecycle":
-        setElement(<Lifecycle name="Rithik" />);
+        setElement(<Lifecycle name="name" />);
         break;
         case "cut-copy-paste-dashboard":
-          setElement(<CutCopyPaste name="Rithik" />);
+          setElement(<CutCopyPaste name="name" />);
           break;
         
       default:

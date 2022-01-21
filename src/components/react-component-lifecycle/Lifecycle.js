@@ -4,7 +4,7 @@ import "./Lifecycle.css";
 export default class Lifecycle extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { surname: "Sandron" };
+    this.state = { surname: "surname" };
   }
 
   produceAprop = (text) => {
@@ -16,7 +16,7 @@ export default class Lifecycle extends React.Component {
   }
 
   update = () => {
-    this.setState({ surname: 'VS' })
+    this.setState({ surname: 'initial' })
   }
 
   render() {
